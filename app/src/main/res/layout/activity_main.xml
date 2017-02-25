@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.example.yls.okhttpclienttest.MainActivity">
+    <EditText
+        android:id="@+id/etPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要查询的网页源码地址"/>
+    <Button
+        android:id="@+id/btnSearchCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询源码"/>
+    <EditText
+        android:id="@+id/etPath2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要查询的图片的地址"/>
+    <Button
+        android:id="@+id/btnSearchImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询图片"/>
+<ImageView
+    android:id="@+id/ivImage"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+<ScrollView
+    android:touchscreenBlocksFocus="true"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</ScrollView>
+</LinearLayout>
